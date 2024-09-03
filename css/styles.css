@@ -145,7 +145,17 @@ a {
     /* Oscurece ligeramente la imagen de fondo */
 }
 
+.section-information {
+    margin-top: 15%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
 #texto {
+    height: 50%;
     position: relative;
     z-index: 2;
     color: white;
@@ -155,6 +165,7 @@ a {
 }
 
 .enlaces-redes {
+    height: 50%;
     width: 100%;
     height: 8.69%;
     position: relative;
@@ -168,8 +179,8 @@ a {
 .boton-red {
     background-color: #3822FD;
     display: flex;
-    height: 100%;
-    width: 20.27%;
+    height: 130%;
+    width: 22%;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -195,6 +206,9 @@ a {
     font-size: 18px;
 }
 
+.section-foto {
+    display: none;
+}
 
 
 /*Vista tablet*/
@@ -347,4 +361,67 @@ a {
         width: 30%;
         height: 70%;
     }
+}
+
+/*Vista celular*/
+@media (max-width: 372px) {
+    #foto-personal{
+        display: none;
+    }
+    .section-foto {
+        display: flex;
+        height: 100%;
+        width: 40%;
+        z-index: 4;
+        margin-right: 0%;
+        margin-top: 15%;
+    }
+
+    #foto-personal-information {
+        height: 40%;
+        width: 90%;
+        display: flex;
+        border-radius: 100px;
+    }
+
+    #information {
+        flex-direction: column-reverse;
+        gap:0;
+    }
+
+    .section-information {
+        margin-top: 10%;
+    }
+
+    #texto {
+        height: 60%;
+        font-size: 25px;
+        padding: 0 20% 0 20%;
+    }
+
+    .enlaces-redes {
+        height: 20%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .boton-red {
+        background-color: #3822FD;
+        display: flex;
+        height: 100%;
+        width: 60%;
+    }
+
+    .section-foto {
+        height: 20%;
+        margin-top: 10%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #foto-personal-information {
+        height: 100%;
+        width: 50%;
+    }
+
 }
