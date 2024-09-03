@@ -225,42 +225,53 @@ a {
         height: 100%;
         width: 100%;
         background-color: #3822FD;
-        gap: 10%;
+        justify-content: center; 
+        align-items: center;
+        gap: 0px;
     }
 
     #container-imagen {
         flex-direction: row;
         margin-top: 0%;
-        width: 40%;
-        height: 60%;
+        width: 50%;
+        height: 70%;
+        margin-right: 1%;
     }
 
     #foto-personal {
         height: 100%;
-        width: 80%;
+        width: 40%;
+        border: none;
+        border-radius: 100px;
+        box-shadow: none;
+        margin-right: -40%;
+
     }
 
     #nombre-personal {
         font-size: 22px;
+        text-align: center;
     }
 
     #menu {
         flex-direction: row;
-        width: 70%;
-        height: 69.97%;
+        width: 50%;
+        height: 100%;
         color: white;
         font-family: 'Calistoga', sans-serif;
         font-size: 100%;
         font-weight: bold;
-        gap: 10%;
+        gap: 0;
+        margin-left: 0;
+
     }
 
     .botones {
         display: none;
         flex-direction: row;
         align-items: end;
-        width: 81.81%;
-        height: 58.57%;
+        width: 60%;
+        height: 40%;
         gap: 7.17%;
     }
 
@@ -268,7 +279,7 @@ a {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 24%;
+        height: 15%;
         gap: 5%;
         border-radius: 15px 0 0 15px;
     }
@@ -280,9 +291,60 @@ a {
     }
 
     .logo-menu {
-        height: 15.71%;
-        width: 16.66%;
+        height: 100%;
+        width: 15%;
         margin-left: 5%;
     }
 
+    #contenedor-menu {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        font-size: 50px;
+        color: white;
+        background-color: #7768FF;
+        padding: 10px;
+        cursor: pointer; /* Cambia el cursor cuando se pasa el mouse por encima */
+        position: relative;
+        z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        border: none;
+    }
+    
+    #menu-desplegable {
+        display: none;
+        flex-direction: column;
+        background-color: #7768FF;
+        position: absolute; /* Posiciona el menú respecto al contenedor */
+        top: 9.5%; /* Ajusta la posición para que aparezca debajo del botón */
+        left: 0;
+        padding: 2%;
+        z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+    }
+    
+    #menu-desplegable a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    
+    #menu-desplegable.show {
+        display: flex; /* Muestra el menú cuando tiene la clase "show" */
+    }
+
+    #menu-desplegable {
+        transition: all 0.3s ease;
+    }
+
+    .boton-red{
+        width: 25%;
+    }
+    
+    .logo-red{
+        width: 30%;
+        height: 70%;
+    }
 }
