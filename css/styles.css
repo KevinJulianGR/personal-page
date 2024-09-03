@@ -389,26 +389,23 @@ a {
         gap:0;
     }
 
-    .section-information {
-        margin-top: 10%;
-    }
-
     #texto {
-        height: 60%;
+        height: 65%;
         font-size: 25px;
-        padding: 0 20% 0 20%;
+        padding: 0 10% 0 10%;
     }
 
     .enlaces-redes {
         height: 20%;
         width: 100%;
         flex-direction: column;
+        
     }
 
     .boton-red {
         background-color: #3822FD;
         display: flex;
-        height: 100%;
+        height: 70%;
         width: 60%;
     }
 
