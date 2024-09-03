@@ -364,7 +364,7 @@ a {
 }
 
 /*Vista celular*/
-@media (max-width: 372px) {
+@media (max-width: 375px) {
     #foto-personal{
         display: none;
     }
