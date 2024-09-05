@@ -1,0 +1,67 @@
+h2{
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 35px;
+}
+
+.imagenes-lenguajes{
+    min-height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 2;
+}
+
+.imagenes-lenguajes {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lenguaje-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lenguaje-container.active {
+    display: flex;
+}
+
+.iconos-programacion {
+    height: 150px; 
+    width: 150px;
+}
+
+.nombre-lenguaje {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.btn-nav {
+    background-color: #3822FD;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.parrafo-servicio{
+    z-index: 2;
+    padding: 0 50px 0 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}

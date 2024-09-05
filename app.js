@@ -15,3 +15,29 @@ document.addEventListener("click", function(event) {
         menu.classList.remove("show");
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const containers = document.querySelectorAll('.lenguaje-container');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    function showContainer(index) {
+        containers.forEach((container, i) => {
+            container.classList.toggle('active', i === index);
+        });
+    }
+
+    prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + containers.length) % containers.length;
+        showContainer(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % containers.length;
+        showContainer(currentIndex);
+    });
+    // Asegurarse de que el primer elemento esté visible al cargar la página
+    showContainer(currentIndex);
+});
