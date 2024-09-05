@@ -337,6 +337,7 @@ a {
         left: 0;
         padding: 2%;
         z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+        position: fixed;
     }
     
     #menu-desplegable a {
