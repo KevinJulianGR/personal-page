@@ -53,20 +53,46 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    #information{
-        justify-content: start;
-        align-items: start;
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .redes{
+    #information {
+        min-height: 100vh;
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .texto-red {
+        font-size: 15px;
+    }
+
+    .redes {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .contenedor-redes-sociales {
+        flex-grow: 1;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: 20px;
     }
 
     .contenedor-redes-proyectos {
-        height: 30%;
+        height: auto;
+        padding-bottom: 20px;
     }
-    .contenedor-redes-sociales {
-        height: 60%;
+
+    .icono-red {
+        height: 80px;
+        width: 80px;
     }
-    
 }
