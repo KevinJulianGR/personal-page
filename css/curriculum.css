@@ -1,0 +1,146 @@
+#information {
+    overflow: auto;
+    justify-content: start;
+}
+
+.contenedor-curriculum {
+    margin-top: 2%;
+    height: 70%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 5%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.contenedor-grande-certificado {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-pequeno-certificado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 30%;
+    border: solid #3822FD;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
+    gap: 5%;
+}
+
+.nombre-certificado {
+    margin-top: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    width: 120px;
+    border: solid #3822FD;
+    border-radius: 100px;
+    font-weight: bold;
+    background-color: #3822FD;
+}
+
+p {
+    text-align: center;
+}
+
+.contenedor-pequeno-certificado:hover {
+    background-color: #7768FF;
+}
+
+.contenedor-experiencia {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -7%;
+    z-index: 2;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-pequeno-experiencia {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid #3822FD;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.nombre-experiencia {
+    margin-top: -2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 120px;
+    border-radius: 100px;
+    font-weight: bold;
+    background-color: #3822FD;
+}
+
+.contenedor-pequeno-experiencia:hover {
+    background-color: #7768FF;
+}
+
+@media (max-width: 480px) {
+    .fondo {
+        min-height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+        position: fixed; 
+    }
+
+    #information {
+        flex-direction: column;
+    }
+
+    .contenedor-curriculum {
+        min-height: 100vh;
+
+    }
+
+    .contenedor-grande-certificado {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        gap:5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .contenedor-pequeno-certificado {
+        
+        height: 190px;
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .contenedor-pequeno-experiencia {
+        font-size: 15px;
+
+    }
+}
