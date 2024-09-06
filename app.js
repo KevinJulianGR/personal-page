@@ -2,7 +2,7 @@
 document.getElementById("contenedor-menu").addEventListener("click", function(event) {
     var menu = document.getElementById("menu-desplegable");
     menu.classList.toggle("show");
-    event.stopPropagation(); // Evita que el evento se propague al documento
+    event.stopPropagation(); 
 });
 
 // Cerrar el menú cuando se hace clic fuera del contenedor del menú
